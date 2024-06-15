@@ -9,6 +9,9 @@
     justify-content: space-around;
     align-items: center;
     margin: 30px 0px;
+    flex-wrap: wrap;
+    gap: 20px;
+
 }
 
 .services_container{
@@ -44,4 +47,12 @@
 
 .card_data{
     padding: 10px;
+}
+
+
+@media (width<800px) {
+    .card_service{
+        width: 90%;
+    }
+    
 }

@@ -1,8 +1,10 @@
 .New_collections{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px 10px;
+    flex-wrap: wrap;
+    gap: 27px;
 
 }
 
@@ -37,4 +39,13 @@
     object-fit: contain;
     height: 250px;
 
+}
+
+@media (width<750px) {
+
+    .card1{
+        width: 97%;
+
+    }
+    
 }

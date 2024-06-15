@@ -23,6 +23,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     row-gap: 20px;
+    column-gap: 10px;
     padding: 40px 0px;
   }
   
@@ -30,6 +31,7 @@
     width: 30%;
     text-align: center;
     padding: 20px;
+
   }
   
   .card .card_img img {
@@ -54,3 +56,20 @@
     font-size: 30px;
   }
   
+
+  @media (width<800px) {
+    
+    .card {
+      width: 40%;
+
+    }
+  }
+
+
+  @media (width<600px) {
+    
+    .card {
+      width: 90%;
+
+    }
+  }

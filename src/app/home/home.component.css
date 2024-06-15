@@ -29,10 +29,14 @@
 .carousel_data{
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 50%;
     z-index: 1;
-    transform: translate(-20%,-50%);
-    width: 60%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .carousel_data h2{
