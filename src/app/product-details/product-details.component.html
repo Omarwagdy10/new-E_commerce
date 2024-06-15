@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    
+    <div class="product_img">
+        <img [src]="product_details?.image" alt="">
+    </div>
+
+    <div class="product_details">
+        <h1>{{ product_details?.title }}</h1>
+        <h4><b>Price</b> :{{ product_details?.price }}$</h4>
+        <h4><b>Count</b> :{{ product_details?.rating?.count }}</h4>
+        <h4><b>Category</b>  :{{ product_details?.category }}</h4>
+        <h4><b>Description</b>  :{{ product_details?.description }}</h4>
+        <ngb-rating class="rating" [readonly]="true" [max]="5" [rate]="product_details?.rating?.rate || 0"></ngb-rating>
+
+    </div>
+
+</div>

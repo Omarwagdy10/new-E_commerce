@@ -1,0 +1,31 @@
+
+<div class="container-fluid">
+    <div class="top_container">
+        <h1 class="top">Top Products</h1>
+        <img src="../../assets/favourite.gif" alt="">
+
+    </div>
+    <div class="section2">
+    @for (item of alldata ; track $index) {
+    
+        <div class="card">
+            <div class="card_img">
+                <img src="{{ item?.image }}" alt="">
+            </div>
+    
+            <div class="card_data">
+                <h2>{{ item?.title }}</h2>
+                <ngb-rating class="rating" [readonly]="true" [max]="5" [rate]="item?.rating?.rate || 0"></ngb-rating>
+            
+            </div>
+        </div>
+    
+    
+    }
+    
+    
+    
+    
+    </div>
+    
+</div>

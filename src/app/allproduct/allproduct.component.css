@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* ============================================= */
+
+
+/* =================================================== */
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap !important;
+    padding: 15px 0px; 
+    gap: 30px 15px;
+
+}
+
+.card_container{
+    border: solid 1px gray;
+    padding: 10px;
+    box-shadow: 7px 5px 10px gray;
+    border-radius: 10px;
+}
+
+.car{
+    text-align: center;
+    cursor: pointer;
+}
+
+.car img{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    height: 270px;
+    padding-bottom:20px ;
+
+}
+
+.card-title{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 600;
+
+}
+
+.card-text{
+    font-weight: 500;
+}
+
+.rating{
+    font-size: 30px;
+    color:#F1CB5A ;
+}
+
+
