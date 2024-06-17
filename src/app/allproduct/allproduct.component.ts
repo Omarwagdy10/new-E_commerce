@@ -2,14 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbRatingConfig, NgbRatingModule } from '@ng-bootstrap/ng-bootstrap';
-import { SliderModule } from 'primeng/slider';
 import { FormsModule } from '@angular/forms';
 import {MatSliderModule} from '@angular/material/slider';
 
 @Component({
   selector: 'app-allproduct',
   standalone: true,
-  imports: [NgbRatingModule,SliderModule,MatSliderModule],
+  imports: [NgbRatingModule,MatSliderModule],
   templateUrl: './allproduct.component.html',
   styleUrl: './allproduct.component.css'
 })
