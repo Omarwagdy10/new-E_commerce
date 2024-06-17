@@ -8,8 +8,8 @@
     <div class="section2">
     @for (item of alldata ; track $index) {
     
-        <div class="card">
-            <div class="card_img">
+        <div class="card" (click)="redirect(item?.id)" >
+            <div class="card_img" >
                 <img src="{{ item?.image }}" alt="">
             </div>
     

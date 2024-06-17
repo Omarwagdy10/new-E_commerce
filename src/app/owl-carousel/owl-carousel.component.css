@@ -57,7 +57,7 @@
       font-weight: 700;
       padding-left: 20px;
       
-      font-size: 30px;
+      font-size: 26px;
       letter-spacing: 7px;
   
   }
@@ -70,7 +70,7 @@
       font-weight: 700;
       padding-left: 20px;
       
-      font-size: 30px;
+      font-size: 26px;
       letter-spacing: 7px;
   
   }
@@ -83,7 +83,7 @@
       color: white;
       font-weight: 700;
       padding-left: 20px;
-      font-size: 30px;
+      font-size: 26px;
       letter-spacing: 7px;
   
   }
@@ -95,7 +95,7 @@
       color: white;
       font-weight: 700;
       padding-left: 20px;
-      font-size: 30px;
+      font-size: 26px;
       letter-spacing: 7px;
   
   }
@@ -144,4 +144,13 @@
     }
     .img4 img:hover {
       transform: scale(1.07);
+    }
+
+
+    @media (width<650px) {
+      
+      .head{
+        font-size: 15px !important;
+        font-weight: 900;
+      }
     }

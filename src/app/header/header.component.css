@@ -1,10 +1,16 @@
 .navbar{
     background-color: #333333;
-    color: white !important;
+    color: #F3F3F3 !important;
 
     }
     
     .container-fluid{
         
-        color: white !important;
+        color: #F3F3F3 !important;
+}
+
+
+.navbar-toggler{
+    background-color: #F3F3F3 !important;
+    color: #F3F3F3 !important;
 }

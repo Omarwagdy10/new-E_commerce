@@ -4,12 +4,23 @@
     box-sizing: border-box;
 }
 
+.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
 
 /* ============================================= */
 
 
 /* =================================================== */
 
+
+.allproducts_container{
+    width: 70%;
+}
 
 .row{
     display: flex;
@@ -24,13 +35,14 @@
 .card_container{
     border: solid 1px gray;
     padding: 10px;
-    box-shadow: 7px 5px 10px gray;
+    box-shadow: 5px 5px 7px gray;
     border-radius: 10px;
 }
 
 .car{
     text-align: center;
     cursor: pointer;
+    
 }
 
 .car img{
@@ -39,6 +51,7 @@
     display: flex;
     height: 270px;
     padding-bottom:20px ;
+    object-fit: contain;
 
 }
 
@@ -59,4 +72,84 @@
     color:#F1CB5A ;
 }
 
+
+/* ====================================================================================== */
+
+.sid_container{
+    width: 20%;
+}
+
+.Categories{
+  padding: 20px 0px ;  
+}
+
+.Categories h2{
+    font-size: 25px;
+    font-weight: 900;
+    padding: 20px 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.category_data{
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.category_data h6{
+    transition: .5s;
+}
+
+.category_data h6:hover{
+    color: black;
+}
+
+.price{
+    padding: 20px 0px;
+}
+
+
+details summary {
+    border: solid 1px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    border-radius: 7px;
+}
+
+details p { 
+    border: solid  1px;
+    padding: 10px ;
+    margin: 5px 0px;
+    border-radius: 7px;
+}
+
+.filter h2{
+    padding: 15px ;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 25px;
+
+
+}
+
+
+@media (width<700px) {
+    .sid_container{
+        width: 80%;
+    }
+
+    .allproducts_container{
+        width: 90%;
+    }
+    
+}
 

@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NgbRatingConfig, NgbRatingModule } from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -22,7 +23,7 @@ interface Product {
   styleUrl: './section2.component.css'
 })
 export class Section2Component implements OnInit {
-  constructor( private http : HttpClient){}
+  constructor( private http : HttpClient,private router : Router){}
 
   alldata: Product[] = [];
 
@@ -33,4 +34,9 @@ export class Section2Component implements OnInit {
     });
   }
 
+  redirect(product_id:any){
+    this.router.navigate([`product_details`,product_id])
+  }
+
+  
 }

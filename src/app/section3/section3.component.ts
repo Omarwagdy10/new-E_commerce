@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-section3',
@@ -10,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Section3Component implements OnInit {
 
-  constructor (private http : HttpClient ){}
+  constructor (private http : HttpClient , private router : Router ){}
 
   allproduct!:any
 
@@ -20,5 +21,9 @@ export class Section3Component implements OnInit {
       console.log(res);
       
     })
+  }
+
+  redirect(){
+    this.router.navigate([`allproducts`])
   }
 }

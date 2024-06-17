@@ -19,6 +19,7 @@
     height: 500px;
     display: flex;
     margin: auto;
+    object-fit: contain;
 }
 
 .product_details{

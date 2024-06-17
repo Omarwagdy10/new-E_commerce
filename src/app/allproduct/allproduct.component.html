@@ -1,25 +1,61 @@
 <div class="container-fluid">
 
+  <div class="sid_container">
+    <div class="Categories">
+      <h2>Categories</h2>
 
-    <div class="allproducts_container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-                @for (item of allproducts ; track $index) {
-                <div class="col-10 col-xxl-3 col-xl-5 col-md-5 card_container" (click)="redirect(item?.id)">
-                  <div class="car h-100">
-                    <img src="{{ item?.image }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">{{ item?.title }}</h5>
-                      <p class="card-text">{{ item?.category }}</p>
-                      <p class="card-text">{{ item?.price }}</p>
-                      <ngb-rating class="rating" [readonly]="true" [max]="5" [rate]="item?.rating?.rate || 0"></ngb-rating>
+      <div class="category_data">
+        <h6>men's clothing</h6>
+        <h6>Mens Casual Slim Fit</h6>
+        <h6>women's clothing</h6>
+        <h6>jewelery</h6>
+        <h6>electronics</h6>
+      </div>
 
-                    </div>
-                  </div>
-                </div>
-                }
-
-              </div>
     </div>
-    
+
+    <div class="filter">
+      <h2>Filters</h2>
+    </div>
+
+    <hr>
+
+    <div class="price">
+      <details>
+        <summary>Price</summary>
+        <p>500$-1000$</p>
+        <p>1000$-1500$</p>
+        <p>1500$-2000$</p>
+        <p>2000$-2500$</p>
+        <p>2500$-3000$</p>
+      </details>
+
+    </div>
+
+
+  </div>
+
+  <div class="allproducts_container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      @for (item of allproducts ; track $index) {
+      <div class="col-10 col-xxl-3 col-xl-5 col-md-5 card_container" >
+        <div class="car h-100" (click)="redirect(item?.id)">
+          <img src="{{ item?.image }}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ item?.title }}</h5>
+            <p class="card-text">{{ item?.category }}</p>
+            <p class="card-text">{{ item?.price }}</p>
+            <ngb-rating class="rating" [readonly]="true" [max]="5" [rate]="item?.rating?.rate || 0"></ngb-rating>
+
+          </div>
+        </div>
+      </div>
+      }
+
+    </div>
+  </div>
+
+
+
 
 </div>
