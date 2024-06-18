@@ -37,20 +37,63 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    backdrop-filter:blur(9px);
+    padding: 30px 20px;
+    border-radius: 10px;
 }
 
 .carousel_data h2{
     font-size: 60px;
-    color: #F3F3F3;
+    color: #333333;
     letter-spacing: 7px;
+    font-weight: 600;
 }
 
 .carousel_data p{
     font-size: 25px;
     font-weight: 700;
-    color: #F3F3F3;
+    color: #333333;
+}
+
+
+
+
+@keyframes ani1{
+0%{
+    translate: 0 0;
+
+}
+
+50%{
+    translate: 0 10px; 
+}
+
+75%{
+    translate: 0 20; 
+}
+
+100%{
+    translate: 0 0; 
+}
+
+
 }
 
 
 
 /* ================================================= */
+
+@media (width<700px) {
+
+    .carousel_data h2{
+        font-size: 45px;
+
+    }
+    
+    .carousel_data p{
+        font-size: 20px;
+        font-weight: 700;
+        color: #333333;
+    }
+    
+}

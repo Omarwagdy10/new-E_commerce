@@ -8,7 +8,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 
@@ -35,14 +34,13 @@
 .card_container{
     border: solid 1px gray;
     padding: 10px;
-    box-shadow: 5px 5px 7px gray;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .car{
     text-align: center;
     cursor: pointer;
-    
 }
 
 .car img{
@@ -52,6 +50,12 @@
     height: 270px;
     padding-bottom:20px ;
     object-fit: contain;
+    transition: .7s;
+
+}
+
+.car img:hover{
+    transform: scale(1.07);
 
 }
 

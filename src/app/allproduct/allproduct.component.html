@@ -44,7 +44,7 @@
           <div class="card-body">
             <h5 class="card-title">{{ item?.title }}</h5>
             <p class="card-text">{{ item?.category }}</p>
-            <p class="card-text">{{ item?.price }}</p>
+            <p class="card-text">{{ item?.price }}$</p>
             <ngb-rating class="rating" [readonly]="true" [max]="5" [rate]="item?.rating?.rate || 0"></ngb-rating>
 
           </div>
