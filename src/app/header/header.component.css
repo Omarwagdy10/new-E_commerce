@@ -1,7 +1,10 @@
 .navbar{
     background-color: #333333;
     color: #F3F3F3 !important;
-
+    padding: 10px ;
+    position: sticky;
+    top: 0;
+    z-index: 20;
     }
     
     .container-fluid{
@@ -13,4 +16,21 @@
 .navbar-toggler{
     background-color: #F3F3F3 !important;
     color: #F3F3F3 !important;
+}
+
+.left_side{
+    position: relative;
+}
+.left_side i{
+    font-size: 25px;
+}
+
+.left_side p{
+    position: absolute;
+    top: -6px;
+    right: 0;
+    color: white;
+    transform: translate(0%,-50%);
+    font-size: 18px;
+    font-weight: 700;
 }

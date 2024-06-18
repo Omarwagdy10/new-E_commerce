@@ -1,7 +1,26 @@
 <div class="container-fluid">
     
-    <div class="product_img">
-        <img [src]="product_details?.image" alt="">
+    <div class="product_container">
+        <div class="product_img">
+            <img [src]="product_details?.image" alt="">
+        </div>
+    
+        <div class="product_options">
+            <h3>{{ product_details?.title }}</h3>
+            <h4><b>Category</b>  :{{ product_details?.category }}</h4>
+            <h4><b>Price</b> :{{ product_details?.price }}$</h4>
+            <ngb-rating class="rating" [readonly]="true" [max]="5" [rate]="product_details?.rating?.rate || 0"></ngb-rating>
+
+            <div class="options">
+                <div class="btns">
+                    <button type="button" class="btn btn-success px-4 py-2 " (click)="addtocart()">Add To Cart</button>
+                    <button type="button" class="btn btn-danger  px-4 py-2 " (click)="redirect()" >Back To Home</button>
+    
+                </div>
+            </div>
+    
+        </div>
+
     </div>
 
     <div class="product_details">

@@ -149,11 +149,6 @@
 
     @media (width<650px) {
       
-      .head{
-        font-size: 15px !important;
-        font-weight: 900;
-      }
-
       .img2 {
         width: 50%;    
       }

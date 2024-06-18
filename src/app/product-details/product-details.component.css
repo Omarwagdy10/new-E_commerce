@@ -5,8 +5,17 @@
     gap: 20px;
     flex-wrap: wrap;
 }
-
-
+/* =========================================================== */
+.product_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px ;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* ======================================================== */
 .product_img{
     border: solid 1px ;
     padding: 30px ;
@@ -21,10 +30,34 @@
     margin: auto;
     object-fit: contain;
 }
+/* ========================================================== */
+.product_options{
+    width: 45%;
+    border: solid 1px ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 50px ;
+}
 
+.options .btns{
+    display: flex;
+    gap: 20px;
+}
+
+.product_options h3{
+    text-align: center;
+    padding: 10px 0px;
+    font-weight: 700;
+}
+
+
+
+/* =================================================================== */
 .product_details{
     border: solid  1px;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
